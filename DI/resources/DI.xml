@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="math" class="com.sirosh.di.Discipline">
+        <constructor-arg value="Math"></constructor-arg>
+        <constructor-arg value="4"></constructor-arg>
+    </bean>
+
+    <bean name="ruby" class="com.sirosh.di.Discipline">
+        <property name="name" value="Ruby"></property>
+        <property name="credits" value="5"></property>
+    </bean>
+
+    <bean name="sam" class="com.sirosh.di.Student">
+
+        <constructor-arg value="Sam"></constructor-arg>
+        <property name="disciplenes">
+            <list>
+                <ref bean="math"></ref>
+                <ref bean="ruby"></ref>
+            </list>
+        </property>
+    </bean>
+
+</beans>
