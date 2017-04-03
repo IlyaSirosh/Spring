@@ -1,4 +1,4 @@
-package com.sirosh.db.domain;
+package com.sirosh.jpa.entity;
 
 import javax.persistence.*;
 import java.sql.Date;

@@ -1,7 +1,8 @@
-package com.sirosh.db.service;
+package com.sirosh.jpa.service;
 
-import com.sirosh.db.dao.TeacherDao;
-import com.sirosh.db.domain.Teacher;
+
+import com.sirosh.jpa.dao.TeacherDao;
+import com.sirosh.jpa.entity.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
